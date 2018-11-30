@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TubeSteels" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="TubeSteels" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TubeSteel">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Size" type="xs:string" minOccurs="0" />
+              <xs:element name="A" type="xs:double" minOccurs="0" />
+              <xs:element name="h" type="xs:double" minOccurs="0" />
+              <xs:element name="b" type="xs:double" minOccurs="0" />
+              <xs:element name="t_nom" type="xs:double" minOccurs="0" />
+              <xs:element name="t_des" type="xs:double" minOccurs="0" />
+              <xs:element name="wt__ft" type="xs:double" minOccurs="0" />
+              <xs:element name="b_t" type="xs:double" minOccurs="0" />
+              <xs:element name="h_t" type="xs:double" minOccurs="0" />
+              <xs:element name="Ix" type="xs:double" minOccurs="0" />
+              <xs:element name="Sx" type="xs:double" minOccurs="0" />
+              <xs:element name="rx" type="xs:double" minOccurs="0" />
+              <xs:element name="Zx" type="xs:double" minOccurs="0" />
+              <xs:element name="Iy" type="xs:double" minOccurs="0" />
+              <xs:element name="Sy" type="xs:double" minOccurs="0" />
+              <xs:element name="ry" type="xs:double" minOccurs="0" />
+              <xs:element name="Zy" type="xs:double" minOccurs="0" />
+              <xs:element name="h_flat" type="xs:double" minOccurs="0" />
+              <xs:element name="b_flat" type="xs:double" minOccurs="0" />
+              <xs:element name="J" type="xs:double" minOccurs="0" />
+              <xs:element name="C" type="xs:double" minOccurs="0" />
+              <xs:element name="A_surf" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DoubleAngles" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="DoubleAngles" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DoubleAngle">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Size" type="xs:string" minOccurs="0" />
+              <xs:element name="A" type="xs:double" minOccurs="0" />
+              <xs:element name="d" type="xs:double" minOccurs="0" />
+              <xs:element name="b" type="xs:double" minOccurs="0" />
+              <xs:element name="t" type="xs:double" minOccurs="0" />
+              <xs:element name="wt__ft" type="xs:double" minOccurs="0" />
+              <xs:element name="Ix" type="xs:double" minOccurs="0" />
+              <xs:element name="Sx" type="xs:double" minOccurs="0" />
+              <xs:element name="rx" type="xs:double" minOccurs="0" />
+              <xs:element name="y_bar" type="xs:double" minOccurs="0" />
+              <xs:element name="Zx" type="xs:double" minOccurs="0" />
+              <xs:element name="yp" type="xs:double" minOccurs="0" />
+              <xs:element name="Iy" type="xs:double" minOccurs="0" />
+              <xs:element name="Sy" type="xs:double" minOccurs="0" />
+              <xs:element name="ry" type="xs:double" minOccurs="0" />
+              <xs:element name="Zy" type="xs:double" minOccurs="0" />
+              <xs:element name="ro_bar" type="xs:double" minOccurs="0" />
+              <xs:element name="H" type="xs:double" minOccurs="0" />
+              <xs:element name="Qs" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

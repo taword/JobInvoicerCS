@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Pipes" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="Pipes" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Pipe">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Size" type="xs:string" minOccurs="0" />
+              <xs:element name="A" type="xs:double" minOccurs="0" />
+              <xs:element name="OD" type="xs:double" minOccurs="0" />
+              <xs:element name="ID" type="xs:double" minOccurs="0" />
+              <xs:element name="t_nom" type="xs:double" minOccurs="0" />
+              <xs:element name="t_des" type="xs:double" minOccurs="0" />
+              <xs:element name="wt__ft" type="xs:double" minOccurs="0" />
+              <xs:element name="D_t" type="xs:double" minOccurs="0" />
+              <xs:element name="I" type="xs:double" minOccurs="0" />
+              <xs:element name="S" type="xs:double" minOccurs="0" />
+              <xs:element name="r" type="xs:double" minOccurs="0" />
+              <xs:element name="Z" type="xs:double" minOccurs="0" />
+              <xs:element name="J" type="xs:double" minOccurs="0" />
+              <xs:element name="C" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

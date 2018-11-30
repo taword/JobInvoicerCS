@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{49CDFCAE-86E0-4034-A12F-5BB1B75A67D1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JobInvoicerCS</RootNamespace>
+    <AssemblyName>JobInvoicerCS</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>8a3869f6</NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>JobInvoicerCS.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Beam.cs" />
+    <Compile Include="Fractions.cs" />
+    <Compile Include="Invoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoice.Designer.cs">
+      <DependentUpon>Invoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Materials.cs" />
+    <Compile Include="MbrSheet.cs" />
+    <Compile Include="Member.cs" />
+    <Compile Include="Misc.cs" />
+    <Compile Include="ObjectDumper.cs" />
+    <Compile Include="PiecemarkList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PiecemarkList.Designer.cs">
+      <DependentUpon>PiecemarkList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RichTextBoxPrintCtrl\RichTextBoxPrintCtrl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Bill.cs" />
+    <Compile Include="Detail.cs" />
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Line.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sequence.cs" />
+    <Compile Include="Sheet.cs" />
+    <Compile Include="SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashForm.Designer.cs">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Structure.cs" />
+    <Compile Include="Warning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Warning.Designer.cs">
+      <DependentUpon>Warning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WeightType.cs" />
+    <Compile Include="XMLFiles\Angles.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Angles.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="XMLFiles\Channels.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Channels.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="XMLFiles\DoubleAngles.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DoubleAngles.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="XMLFiles\H-Piles.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>H-Piles.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="XMLFiles\MiscellaneousChannels.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MiscellaneousChannels.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="XMLFiles\MiscellaneousShapes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MiscellaneousShapes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="XMLFiles\MiscellaneousShapeTees.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MiscellaneousShapeTees.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="XMLFiles\Pipes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Pipes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="XMLFiles\S-Shapes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>S-Shapes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="XMLFiles\S-ShapeTees.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>S-ShapeTees.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="XMLFiles\TubeSteelRounds.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TubeSteelRounds.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="XMLFiles\TubeSteels.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TubeSteels.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="XMLFiles\WideFlanges.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WideFlanges.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="XMLFiles\WideFlangeTees.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WideFlangeTees.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Invoice.resx">
+      <DependentUpon>Invoice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PiecemarkList.resx">
+      <DependentUpon>PiecemarkList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SplashForm.resx">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="XMLFiles\Angles.xsc">
+      <DependentUpon>Angles.xsd</DependentUpon>
+    </None>
+    <None Include="XMLFiles\Angles.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Angles.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XMLFiles\Angles.xss">
+      <DependentUpon>Angles.xsd</DependentUpon>
+    </None>
+    <None Include="XMLFiles\Channels.xsc">
+      <DependentUpon>Channels.xsd</DependentUpon>
+    </None>
+    <None Include="XMLFiles\Channels.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Channels.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XMLFiles\Channels.xss">
+      <DependentUpon>Channels.xsd</DependentUpon>
+    </None>
+    <None Include="XMLFiles\DoubleAngles.xsc">
+      <DependentUpon>DoubleAngles.xsd</DependentUpon>
+    </None>
+    <None Include="XMLFiles\DoubleAngles.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DoubleAngles.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XMLFiles\DoubleAngles.xss">
+      <DependentUpon>DoubleAngles.xsd</DependentUpon>
+    </None>
+    <None Include="XMLFiles\H-Piles.xsc">
+      <DependentUpon>H-Piles.xsd</DependentUpon>
+    </None>
+    <None Include="XMLFiles\H-Piles.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>H-Piles.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XMLFiles\H-Piles.xss">
+      <DependentUpon>H-Piles.xsd</DependentUpon>
+    </None>
+    <None Include="XMLFiles\MiscellaneousChannels.xsc">
+      <DependentUpon>MiscellaneousChannels.xsd</DependentUpon>
+    </None>
+    <None Include="XMLFiles\MiscellaneousChannels.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MiscellaneousChannels.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XMLFiles\MiscellaneousChannels.xss">
+      <DependentUpon>MiscellaneousChannels.xsd</DependentUpon>
+    </None>
+    <None Include="XMLFiles\MiscellaneousShapes.xsc">
+      <DependentUpon>MiscellaneousShapes.xsd</DependentUpon>
+    </None>
+    <None Include="XMLFiles\MiscellaneousShapes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MiscellaneousShapes.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XMLFiles\MiscellaneousShapes.xss">
+      <DependentUpon>MiscellaneousShapes.xsd</DependentUpon>
+    </None>
+    <None Include="XMLFiles\MiscellaneousShapeTees.xsc">
+      <DependentUpon>MiscellaneousShapeTees.xsd</DependentUpon>
+    </None>
+    <None Include="XMLFiles\MiscellaneousShapeTees.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MiscellaneousShapeTees.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XMLFiles\MiscellaneousShapeTees.xss">
+      <DependentUpon>MiscellaneousShapeTees.xsd</DependentUpon>
+    </None>
+    <None Include="XMLFiles\Pipes.xsc">
+      <DependentUpon>Pipes.xsd</DependentUpon>
+    </None>
+    <None Include="XMLFiles\Pipes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Pipes.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XMLFiles\Pipes.xss">
+      <DependentUpon>Pipes.xsd</DependentUpon>
+    </None>
+    <None Include="XMLFiles\S-Shapes.xsc">
+      <DependentUpon>S-Shapes.xsd</DependentUpon>
+    </None>
+    <None Include="XMLFiles\S-Shapes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>S-Shapes.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XMLFiles\S-Shapes.xss">
+      <DependentUpon>S-Shapes.xsd</DependentUpon>
+    </None>
+    <None Include="XMLFiles\S-ShapeTees.xsc">
+      <DependentUpon>S-ShapeTees.xsd</DependentUpon>
+    </None>
+    <None Include="XMLFiles\S-ShapeTees.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>S-ShapeTees.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XMLFiles\S-ShapeTees.xss">
+      <DependentUpon>S-ShapeTees.xsd</DependentUpon>
+    </None>
+    <None Include="XMLFiles\TubeSteelRounds.xsc">
+      <DependentUpon>TubeSteelRounds.xsd</DependentUpon>
+    </None>
+    <None Include="XMLFiles\TubeSteelRounds.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TubeSteelRounds.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XMLFiles\TubeSteelRounds.xss">
+      <DependentUpon>TubeSteelRounds.xsd</DependentUpon>
+    </None>
+    <None Include="XMLFiles\TubeSteels.xsc">
+      <DependentUpon>TubeSteels.xsd</DependentUpon>
+    </None>
+    <None Include="XMLFiles\TubeSteels.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TubeSteels.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XMLFiles\TubeSteels.xss">
+      <DependentUpon>TubeSteels.xsd</DependentUpon>
+    </None>
+    <None Include="XMLFiles\WideFlanges.xsc">
+      <DependentUpon>WideFlanges.xsd</DependentUpon>
+    </None>
+    <None Include="XMLFiles\WideFlanges.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WideFlanges.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XMLFiles\WideFlanges.xss">
+      <DependentUpon>WideFlanges.xsd</DependentUpon>
+    </None>
+    <None Include="XMLFiles\WideFlangeTees.xsc">
+      <DependentUpon>WideFlangeTees.xsd</DependentUpon>
+    </None>
+    <None Include="XMLFiles\WideFlangeTees.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WideFlangeTees.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XMLFiles\WideFlangeTees.xss">
+      <DependentUpon>WideFlangeTees.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="XMLFiles\MiscellaneousChannels.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XMLFiles\Angles.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XMLFiles\Channels.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XMLFiles\DoubleAngles.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XMLFiles\H-Piles.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XMLFiles\MiscellaneousShapes.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XMLFiles\MiscellaneousShapeTees.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XMLFiles\Pipes.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XMLFiles\S-Shapes.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XMLFiles\S-ShapeTees.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XMLFiles\TubeSteelRounds.xml" />
+    <Content Include="XMLFiles\TubeSteels.xml" />
+    <Content Include="XMLFiles\WideFlanges.xml" />
+    <Content Include="XMLFiles\WideFlangeTees.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="RichTextLib">
+      <Guid>{3B7C8863-D78F-101B-B9B5-04021C009402}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>2</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

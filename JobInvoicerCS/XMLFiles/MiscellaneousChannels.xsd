@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MiscellaneousChannels" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="MiscellaneousChannels" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="MiscellaneousChannel">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Size" type="xs:string" minOccurs="0" />
+              <xs:element name="A" type="xs:double" minOccurs="0" />
+              <xs:element name="d" type="xs:double" minOccurs="0" />
+              <xs:element name="tw" type="xs:double" minOccurs="0" />
+              <xs:element name="bf" type="xs:double" minOccurs="0" />
+              <xs:element name="tf" type="xs:double" minOccurs="0" />
+              <xs:element name="k_des" type="xs:double" minOccurs="0" />
+              <xs:element name="k_det" type="xs:double" minOccurs="0" />
+              <xs:element name="T" type="xs:double" minOccurs="0" />
+              <xs:element name="gage" type="xs:double" minOccurs="0" />
+              <xs:element name="rts" type="xs:double" minOccurs="0" />
+              <xs:element name="ho" type="xs:double" minOccurs="0" />
+              <xs:element name="wt__ft" type="xs:double" minOccurs="0" />
+              <xs:element name="eo" type="xs:double" minOccurs="0" />
+              <xs:element name="Ix" type="xs:double" minOccurs="0" />
+              <xs:element name="Sx" type="xs:double" minOccurs="0" />
+              <xs:element name="rx" type="xs:double" minOccurs="0" />
+              <xs:element name="Zx" type="xs:double" minOccurs="0" />
+              <xs:element name="Iy" type="xs:double" minOccurs="0" />
+              <xs:element name="Sy" type="xs:double" minOccurs="0" />
+              <xs:element name="ry" type="xs:double" minOccurs="0" />
+              <xs:element name="x_bar" type="xs:double" minOccurs="0" />
+              <xs:element name="Zy" type="xs:double" minOccurs="0" />
+              <xs:element name="xp" type="xs:double" minOccurs="0" />
+              <xs:element name="J" type="xs:double" minOccurs="0" />
+              <xs:element name="Cw" type="xs:double" minOccurs="0" />
+              <xs:element name="ro_bar" type="xs:double" minOccurs="0" />
+              <xs:element name="H" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
